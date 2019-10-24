@@ -8,8 +8,8 @@ var input = 1;
 var fizzBuzzPrec;
 while (input <= 100) {
   fizzBuzzPrec = document.getElementById('fizzbuzz').innerHTML;
-  document.getElementById('fizzbuzz').innerHTML = fizzBuzzPrec + input;
-  
+  document.getElementById('fizzbuzz').innerHTML = fizzBuzzPrec + "<li>" + input + "</li>";
+
  // sovrascrivere numeri multipli di 3 e 5 - uso il modulo var%3==0 && var%5==0
  if (((input%3)==0)&&((input%5)==0)) {
    console.log("FizzBuzz");
