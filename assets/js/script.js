@@ -7,15 +7,18 @@
 var input = 1;
 while (input <= 100) {
  console.log(input);
+ 
  // sovrascrivere numeri multipli di 3 e 5 - uso il modulo var%3==0 && var%5==0
  if (((input%3)==0)&&((input%5)==0)) {
-   console.log(input=fizz);
+   console.log("FizzBuzz");
+
    // sovrascrivere numeri multipli di 5 - uso il modulo var%5==0
  } else if ((input%5)==0) {
-   console.log();
+   console.log("Buzz");
+
    // sovrascrivere numeri multipli di 3 - uso il modulo var%3==0
  } else if ((input%3)==0){
-   console.log();
+   console.log("Fizz");
  }
  input++;
 }
