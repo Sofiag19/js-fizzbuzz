@@ -7,27 +7,30 @@
 var input = 1;
 var fizzBuzzPrec;
 while (input <= 100) {
-  fizzBuzzPrec = document.getElementById('fizzbuzz').innerHTML;
-  document.getElementById('fizzbuzz').innerHTML = fizzBuzzPrec + "<li>" + input + "</li>";
 
  // sovrascrivere numeri multipli di 3 e 5 - uso il modulo var%3==0 && var%5==0
  if (((input%3)==0)&&((input%5)==0)) {
    console.log("FizzBuzz");
-   // input = "FizzBuzz";
+   fizzBuzzPrec = document.getElementById('fizzbuzz').innerHTML;
+   document.getElementById('fizzbuzz').innerHTML = fizzBuzzPrec + "<li>" + "FizzBuzz" + "</li>";
 
    // sovrascrivere numeri multipli di 5 - uso il modulo var%5==0
  } else if ((input%5)==0) {
    console.log("Buzz");
-   // input = "Buzz";
+   fizzBuzzPrec = document.getElementById('fizzbuzz').innerHTML;
+   document.getElementById('fizzbuzz').innerHTML = fizzBuzzPrec + "<li>" + "Buzz" + "</li>";
 
    // sovrascrivere numeri multipli di 3 - uso il modulo var%3==0
  } else if ((input%3)==0){
    console.log("Fizz");
-   // input = "Fizz";
+   fizzBuzzPrec = document.getElementById('fizzbuzz').innerHTML;
+   document.getElementById('fizzbuzz').innerHTML = fizzBuzzPrec + "<li>" + "Fizz" + "</li>";
 
    // infine stampare numeri che non soddisfano le richieste
  }else {
    console.log(input);
+   fizzBuzzPrec = document.getElementById('fizzbuzz').innerHTML;
+   document.getElementById('fizzbuzz').innerHTML = fizzBuzzPrec + "<li>" + input + "</li>";
  }
  input++;
 }
