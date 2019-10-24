@@ -11,11 +11,17 @@ while (input <= 100) {
  // sovrascrivere numeri multipli di 3 e 5 - uso il modulo var%3==0 && var%5==0
  if (((input%3)==0)&&((input%5)==0)) {
    console.log("FizzBuzz");
+<<<<<<< HEAD
 
    // sovrascrivere numeri multipli di 5 - uso il modulo var%5==0
  } else if ((input%5)==0) {
    console.log("Buzz");
 
+=======
+   // sovrascrivere numeri multipli di 5 - uso il modulo var%5==0
+ } else if ((input%5)==0) {
+   console.log("Buzz");
+>>>>>>> 509579215f1dd7a240d800aa7970785733f3971b
    // sovrascrivere numeri multipli di 3 - uso il modulo var%3==0
  } else if ((input%3)==0){
    console.log("Fizz");
